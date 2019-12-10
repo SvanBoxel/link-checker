@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - test
+    - patch-1
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
