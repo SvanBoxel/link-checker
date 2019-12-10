@@ -15,7 +15,7 @@ jobs:
       with:
         args: -v -r *	
     - name: Check output
-      run: echo ${{ steps.link_checker.outputs.result }}
+      run: echo "${{ steps.link_checker.outputs.result }}"
     - name: Create Issue From File
       uses: peter-evans/create-issue-from-file@v1
       env:
