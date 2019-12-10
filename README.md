@@ -20,6 +20,9 @@ This example will check all markdown and HTML files in your repository.
 
 See [Liche's documentation](https://github.com/raviqqe/liche) for further argument details.
 
+You can use the results in subsequent actions by directly refering to the output: `${{ steps.link_checker.outputs.result }}`
+
+
 #### Optional environment variables
 
 If Link Checker finds connectivity problems with links the action will output a markdown file containing the error report.
